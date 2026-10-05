@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Diligence — Simpler Systems for Better Businesses</title>
+<meta name="description" content="Diligence builds practical automations, integrations, and custom business systems that help businesses simplify repetitive operational work.">
+<meta property="og:type" content="website"><meta property="og:title" content="Diligence — Simpler Systems for Better Businesses">
+<meta property="og:description" content="Practical automations, integrations, and custom business systems that simplify repetitive operational work.">
+<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#17150F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2317150F'/%3E%3Cpath d='M7 7h5v10M12 12h5' stroke='%23C9A961' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--bg:#F1ECDF;--fg:#14130F;--br:#A8873A;--ac:#0F4A3C;--bt:#7A5F1F;--ln:#14130F33;--sf:#E7E0CE;--sh:#0003;--mut:#14130Fb3;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C0B09;--fg:#F1ECDF;--br:#C9A961;--ac:#5FB39A;--bt:#C9A961;--ln:#f1ecdf33;--sf:#16140F;--sh:#000b;--mut:#f1ecdfb3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C0B09;--fg:#F1ECDF;--br:#C9A961;--ac:#5FB39A;--bt:#C9A961;--ln:#f1ecdf33;--sf:#16140F;--sh:#000b;--mut:#f1ecdfb3;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4rem)}
+body{background:var(--bg);color:var(--fg);font:400 1.05rem/1.55 'Space Grotesk',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.m{font:500 .72rem/1.3 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase}
+h1,h2,h3{font-weight:700;letter-spacing:-.045em;line-height:.92}
+h2{font-size:clamp(2.3rem,6.2vw,5.6rem)}h3{font-size:1.35rem;letter-spacing:-.02em;line-height:1.1}
+section{padding:clamp(4.5rem,10vw,9rem) 5vw;position:relative}
+p{max-width:52ch}.mut{color:var(--mut)}
+a{color:inherit}:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+header{position:sticky;top:0;z-index:40;display:flex;justify-content:space-between;align-items:center;padding:.8rem 5vw;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+.logo{display:flex;gap:.55rem;align-items:center;font-weight:700;letter-spacing:.14em;text-decoration:none;color:var(--bt)}
+.logo svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:2}
+header nav{display:flex;gap:1.4rem;align-items:center}header nav a{text-decoration:none;display:none}
+@media(min-width:860px){header nav a{display:inline}}
+#th{background:none;border:1.5px solid var(--fg);color:var(--fg);border-radius:99px;padding:.35rem .8rem;cursor:pointer}
+.btn{display:inline-flex;align-items:center;padding:.95rem 1.4rem;border:1.5px solid var(--fg);border-radius:99px;font-weight:500;text-decoration:none;color:var(--fg);background:transparent;box-shadow:3px 3px 0 var(--fg);transition:transform .15s,box-shadow .15s,background .2s;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--fg)}.btn:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--fg)}
+.pri{background:var(--br);color:#14130F;border-color:var(--br)}
+.cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+/* hero */
+.hero{min-height:calc(100svh - 3.5rem);display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center;padding-top:3rem;padding-bottom:3rem}
+.hero h1{font-size:clamp(3.2rem,8.2vw,8.2rem);text-transform:uppercase;margin:1.2rem 0 1.6rem}
+.hero h1 span{display:block}.hero h1 .b{color:var(--br);margin-top:.12em}
+.lead{font-size:1.2rem;max-width:44ch}
+.vt{position:absolute;right:1.2vw;top:50%;writing-mode:vertical-rl;transform:rotate(180deg) translateY(50%);color:var(--mut)}
+.hv{position:relative}.hv svg{width:100%;height:auto;max-height:72vh;display:block;transition:transform .2s;overflow:visible}
+#tidy{margin-top:.8rem;background:none;border:0;border-bottom:1.5px solid var(--fg);color:var(--fg);cursor:pointer;padding:.2rem 0}
+.nd .f{fill:var(--sf);stroke:var(--fg);stroke-width:1.5}.nd .sh{fill:var(--br)}.nd{filter:drop-shadow(0 10px 8px var(--sh))}.nd.h .f{stroke:var(--ac);stroke-width:2.5}.fg path{stroke:var(--ln);fill:none;opacity:.7}
+.nd text{font:500 11px 'JetBrains Mono',monospace;letter-spacing:.08em;fill:var(--fg)}
+.wl{stroke:var(--fg);stroke-width:1.6;opacity:.55;transition:stroke .3s}.wl.lit{stroke:var(--ac);opacity:1;stroke-width:2.4}.pt{fill:var(--ac)}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:2rem}.vt{display:none}.hv svg{max-height:50vh}}
+/* problem */
+.tall{height:260vh;padding:0}.stick{position:sticky;top:3.5rem;height:calc(100svh - 3.5rem);padding:2rem 5vw;display:flex;flex-direction:column}
+.stick h2{font-size:clamp(1.9rem,5vw,4.6rem)}.r2{color:var(--br);opacity:0}
+#stage{flex:1;position:relative;margin:1rem 0}
+.chip{position:absolute;white-space:nowrap;padding:.55rem .9rem;border:1.5px solid var(--fg);background:var(--sf);border-radius:8px;box-shadow:3px 3px 0 var(--fg);font-size:.95rem;font-weight:500}
+.chip.x{border-style:dashed}.chip.ok{background:var(--br);color:#14130F;border-color:var(--br);font:500 .78rem 'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+.sline{position:absolute;background:var(--ac);z-index:-1}.note{opacity:0}
+/* what */
+.mods{display:grid;grid-template-columns:1fr 1fr;margin-top:3rem;border:1px solid var(--ln);position:relative}
+.mods::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px;background:var(--ac);border-radius:50%;box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--ac)}
+.mod{padding:2rem;border:1px solid var(--ln);background:var(--bg);transition:background .2s,transform .2s;transform-style:preserve-3d}
+.mod:hover{background:var(--sf)}.mod .m{color:var(--bt)}.mod h3{margin:.7rem 0 .4rem;font-size:1.7rem}
+.mod ul{list-style:none;margin-top:1rem;display:flex;flex-wrap:wrap;gap:.4rem}.mod li{font-size:.85rem;border:1px solid var(--ln);padding:.2rem .6rem;border-radius:99px}
+@media(max-width:760px){.mods{grid-template-columns:1fr}.mods::after{display:none}}
+/* show */
+.tg{display:inline-flex;border:1.5px solid var(--fg);border-radius:99px;margin:2rem 0}.tg button{padding:.6rem 1.2rem;border:0;background:none;color:var(--fg);border-radius:99px;cursor:pointer;font-family:inherit}
+.tg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.flow{list-style:none;max-width:760px;position:relative;display:grid;gap:.8rem}
+.flow li{display:flex;gap:1rem;align-items:center;padding:1rem 1.2rem;border:1.5px dashed var(--fg);border-radius:10px;background:var(--bg);transition:transform .4s;position:relative}
+.flow li>div{flex:1}.flow li p{color:var(--mut);font-size:.95rem}.flow .tg2{border:1px solid var(--ln);padding:.2rem .6rem;border-radius:99px;white-space:nowrap}
+.before li:nth-child(odd){transform:translateX(-14px) rotate(-.5deg)}.before li:nth-child(even){transform:translateX(16px) rotate(.4deg)}
+.before li:nth-child(2n+1) .tg2{color:#a33}
+.after li{border-style:solid;border-color:var(--br)}.after li .tg2{color:var(--bt);border-color:var(--br)}
+.after::before{content:"";position:absolute;left:2.1rem;top:0;bottom:0;width:2px;background:var(--br);opacity:.4}
+.after::after{content:"";position:absolute;left:calc(2.1rem - 4px);width:10px;height:10px;border-radius:50%;background:var(--ac);animation:dr 3s ease-in-out infinite}
+@keyframes dr{0%{top:0}100%{top:100%}}
+/* work */
+.steps{list-style:none;position:relative;padding-left:70px;margin-top:3rem;display:grid;gap:2.5rem}
+#wl{position:absolute;left:0;top:0;width:40px;height:100%}#wl path{fill:none;stroke:var(--br);stroke-width:3;vector-effect:non-scaling-stroke}
+.steps li{display:grid;grid-template-columns:auto 1fr;gap:0 1.5rem;align-items:baseline}
+.num{font-size:clamp(3rem,8vw,6.5rem);font-weight:700;letter-spacing:-.06em;line-height:1;color:var(--br)}
+.steps h3{text-transform:uppercase;font-size:clamp(1.4rem,3vw,2.2rem)}
+/* game */
+.game{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);margin-top:3.5rem;counter-reset:g}
+.game li{padding:1.4rem 1rem 0 0;border-top:3px solid var(--ln);position:relative;transition:border-color .5s,color .5s;color:var(--mut)}
+.game li::before{content:"";position:absolute;top:-8px;left:0;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--ln);transition:.5s}
+.game li.on{border-color:var(--br);color:var(--fg)}.game li.on::before{border-color:var(--br);background:var(--br)}
+.game b{font-size:1.15rem;letter-spacing:-.02em;text-transform:uppercase;line-height:1.05;display:block}
+.game small{display:block;margin-top:.5rem;font-size:.8rem}
+@media(max-width:900px){.game{grid-template-columns:1fr}.game li{border-top:0;border-left:3px solid var(--ln);padding:0 0 1.6rem 1.4rem}.game li.on{border-color:var(--br)}.game li::before{top:0;left:-8px}}
+/* public */
+.pub{list-style:none;margin-top:3rem;border-top:1px solid var(--ln)}
+.pub li{display:grid;grid-template-columns:4rem 1fr auto;gap:1rem;align-items:center;padding:1.3rem 0;border-bottom:1px solid var(--ln)}
+.pub h3{font-size:clamp(1.3rem,3.4vw,2.4rem);text-transform:uppercase}
+.st{border:1.5px solid var(--fg);border-radius:99px;padding:.25rem .7rem;white-space:nowrap}.st.go{background:var(--br);color:#14130F;border-color:var(--br)}
+.st.go::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:.4rem;animation:pl 1.4s infinite}@keyframes pl{50%{opacity:.2}}
+@media(max-width:600px){.pub li{grid-template-columns:2.4rem 1fr}.pub .st{grid-column:2;justify-self:start}}
+/* who */
+.mq{overflow:hidden;margin:2.5rem -5vw 0}.mt{display:flex;width:max-content;animation:mq 34s linear infinite;margin-bottom:.9rem}.mq:nth-child(odd) .mt{animation-direction:reverse}.mq:hover .mt{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.tag{margin-right:.9rem;padding:.8rem 1.4rem;border:1.5px solid var(--fg);border-radius:12px;background:var(--sf);box-shadow:3px 3px 0 var(--fg);font-size:1.3rem;font-weight:700;letter-spacing:-.02em;text-transform:uppercase;white-space:nowrap}
+/* final */
+.fin{background:#17150F;color:#F1ECDF;overflow:hidden;padding-top:clamp(5rem,12vw,11rem);padding-bottom:clamp(5rem,12vw,11rem)}
+.fin h2{font-size:clamp(2.8rem,9.5vw,9rem);max-width:12ch;position:relative}.fin p{position:relative;margin-top:1.5rem;font-size:1.2rem}
+.fin .btn{border-color:#F1ECDF;color:#F1ECDF;box-shadow:3px 3px 0 #C9A961;position:relative}.fin .btn.pri{background:#C9A961;color:#14130F;border-color:#C9A961}
+.fin svg{position:absolute;right:-5%;bottom:0;width:70%;max-width:900px;opacity:.5}.fin svg path{fill:none;stroke:#C9A961;stroke-width:2}.fin svg rect{fill:none;stroke:#C9A961;stroke-width:2}
+.fl{stroke-dasharray:6 10;animation:fl 3s linear infinite}@keyframes fl{to{stroke-dashoffset:-64}}
+footer{padding:2.5rem 5vw;display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center;font-size:.9rem}
+footer nav{display:flex;gap:1.2rem}
+/* pass 2 */
+.js .hero h1 span{clip-path:inset(0 0 100% 0);transform:translateY(40px);animation:mk .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 span:nth-child(2){animation-delay:.08s}.hero h1 span:nth-child(3){animation-delay:.16s}.hero h1 span:nth-child(4){animation-delay:.28s}.hero h1 span:nth-child(5){animation-delay:.36s}
+@keyframes mk{to{clip-path:inset(-5% 0 -5% 0);transform:none}}
+.js h2.rv{opacity:1;clip-path:inset(0 0 100% 0);transform:translateY(40px);transition:clip-path 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.js h2.rv.in{clip-path:inset(-5% 0 -5% 0);transform:none}
+header nav a,footer nav a{background:linear-gradient(currentColor,currentColor) 0 100%/0 1.5px no-repeat;transition:background-size .3s}
+header nav a:hover,footer nav a:hover{background-size:100% 1.5px}
+#sp{position:fixed;left:1.6vw;top:0;bottom:0;width:2px;background:var(--ln);z-index:30;pointer-events:none}
+#sp::after{content:"";position:absolute;left:0;top:0;width:2px;height:calc(var(--sp,0)*100%);background:var(--br)}
+#sp i{position:absolute;left:-3px;top:calc(var(--sp,0)*100% - 4px);width:8px;height:8px;border-radius:50%;background:var(--ac)}
+.cur{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px;border:1.5px solid var(--ac);border-radius:50%;z-index:60;pointer-events:none;opacity:0;transition:width .2s,height .2s,margin .2s,background .2s,opacity .3s}
+.cur.on{opacity:.9}.cur.big{width:60px;height:60px;margin:-30px;background:color-mix(in srgb,var(--ac) 15%,transparent)}
+#pj{margin-top:3rem;display:grid;gap:2rem}
+.pj{position:sticky;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;padding:2rem;border:1.5px solid var(--fg);border-radius:14px;background:var(--bg);box-shadow:6px 6px 0 var(--fg);transition:transform .25s;outline-offset:4px}
+.pj h3{font-size:clamp(1.8rem,4.5vw,3.6rem);text-transform:uppercase;line-height:.95;margin:.6rem 0;transition:letter-spacing .3s,color .3s}
+.pj:hover h3,.pj:focus h3{letter-spacing:-.02em;color:var(--br)}
+.pj dl{display:grid;gap:.9rem;margin-top:1.2rem}.pj dt{color:var(--bt)}.pj dd{color:var(--mut)}
+.pj .more{max-height:0;opacity:0;overflow:hidden;transition:max-height .4s,opacity .4s}.pj:hover .more,.pj:focus-within .more{max-height:12rem;opacity:1;margin-top:1rem}
+.pj .more p{max-width:none;color:var(--mut)}
+.vis{position:relative;min-height:240px;border:1px solid var(--ln);border-radius:10px;background:var(--sf);overflow:hidden}
+.vis svg{position:absolute;inset:0;width:100%;height:100%}
+.vis rect{fill:var(--bg);stroke:var(--fg);stroke-width:1.5}.vis .fl{fill:none;stroke:var(--br);stroke-width:2}
+.vis text{font:500 9px 'JetBrains Mono',monospace;fill:var(--mut);letter-spacing:.1em}
+.l1{transform:translate(calc(var(--mx,0)*12px),calc(var(--my,0)*12px))}.l2{transform:translate(calc(var(--mx,0)*26px),calc(var(--my,0)*26px))}
+@media(max-width:860px){#sp{display:none}.fg{display:none}.pj{position:static;grid-template-columns:1fr}.pj .more{max-height:none;opacity:1;margin-top:1rem}}
+@media(hover:none){.cur{display:none}.pj .more{max-height:none;opacity:1;margin-top:1rem}}
+@media(prefers-reduced-motion:reduce){.js .hero h1 span{clip-path:none;transform:none}.js h2.rv{clip-path:none;transform:none}}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.mt{flex-wrap:wrap;width:auto}}
+</style></head><body><div id="sp" aria-hidden="true"><i></i></div>
+<header><a class="logo" href="#top" aria-label="Diligence home"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="7" height="7"/><rect x="15" y="15" width="7" height="7"/><path d="M9 5.5h6.5v9.5M5.5 9v6.5H15"/></svg>DILIGENCE</a>
+<nav class="m"><a href="#what">What we build</a><a href="#built">Built</a><a href="#how">How we work</a><a href="#contact">Contact</a><button id="th" class="m" aria-label="Toggle light and dark mode">◐ Theme</button></nav></header>
+<main id="top">
+<section class="hero"><span class="vt m" aria-hidden="true">Input → Process → Connection → Output</span>
+<div><p class="m">DILIGENCE / BUILDING NOW</p>
+<h1><span>Less</span><span>manual</span><span>work.</span><span class="b">More</span><span class="b">business.</span></h1>
+<p class="lead">Diligence builds practical automations, integrations, and custom systems that simplify the repetitive work behind growing businesses.</p>
+<div class="cta"><a class="btn pri mag" href="#contact">Show us your workflow</a><a class="btn mag" href="#what">See what we build</a></div></div>
+<div class="hv"><svg id="wf" viewBox="0 0 680 520" role="img" aria-label="A business workflow of seven steps, from request to customer, reorganizing from scattered pieces into one connected line"></svg>
+<button id="tidy" class="m"></button></div></section>
+
+<section class="tall" id="problem" aria-label="The problem"><div class="stick">
+<p class="m">The problem</p><h2>Most businesses don't have a software problem.</h2><h2 class="r2">They have a workflow problem.</h2>
+<div id="stage" aria-hidden="true"></div>
+<p class="note">People shouldn't spend hours moving information between systems that already exist.</p></div></section>
+
+<section id="what"><p class="m rv">What Diligence does</p><h2 class="rv">Four parts of<br>one system.</h2>
+<div class="mods rv">
+<article class="mod"><span class="m">01 / Process automation</span><h3>Remove repetitive work from the workflow.</h3><ul><li>order processing</li><li>lead follow-ups</li><li>reporting</li><li>notifications</li><li>document generation</li><li>repetitive data entry</li></ul></article>
+<article class="mod"><span class="m">02 / Integrations</span><h3>Make the tools a business already uses talk to each other.</h3><ul><li>Website → CRM</li><li>WhatsApp → Database</li><li>Order → Invoice</li><li>Payment → Records</li></ul></article>
+<article class="mod"><span class="m">03 / Custom business systems</span><h3>When existing tools aren't enough, we build the system.</h3><ul><li>order management</li><li>inventory</li><li>customer management</li><li>dashboards</li><li>internal admin</li></ul></article>
+<article class="mod"><span class="m">04 / Maintenance &amp; optimization</span><h3>Keep the system working as the business changes.</h3><ul><li>monitoring</li><li>API changes</li><li>workflow updates</li><li>bug fixes</li><li>improvements</li></ul></article></div></section>
+
+<section id="show"><p class="m rv">Show, don't tell</p><h2 class="rv">Here's what we mean.</h2>
+<p class="mut rv" style="margin-top:1rem">An illustrative example — a made-up order workflow, not a client case study.</p>
+<div class="tg rv" id="tg" role="group" aria-label="Before or after"><button data-m="before">Before Diligence</button><button data-m="after">After Diligence</button></div>
+<ol class="flow before" id="flow" aria-live="polite"></ol></section>
+
+<section id="built"><p class="m rv">Projects</p><h2 class="rv">What we've<br>built.</h2>
+<p class="mut rv" style="margin-top:1rem">Real projects only. The entries below are placeholders until real details are added.</p><div id="pj"></div></section>
+
+<section id="how"><p class="m rv">How we work</p><h2 class="rv">We don't start<br>with software.</h2>
+<ol class="steps" id="work"><svg id="wl" viewBox="0 0 40 100" preserveAspectRatio="none" aria-hidden="true"><path id="wp"/></svg>
+<li class="rv"><span class="num" data-n="1">00</span><div><h3>Understand</h3><p class="mut">Show us how the work actually gets done.</p></div></li>
+<li class="rv"><span class="num" data-n="2">00</span><div><h3>Find</h3><p class="mut">Identify the repetitive, expensive or error-prone parts.</p></div></li>
+<li class="rv"><span class="num" data-n="3">00</span><div><h3>Design</h3><p class="mut">Find the smallest useful intervention.</p></div></li>
+<li class="rv"><span class="num" data-n="4">00</span><div><h3>Build</h3><p class="mut">Build only what solves the problem.</p></div></li>
+<li class="rv"><span class="num" data-n="5">00</span><div><h3>Improve</h3><p class="mut">Measure what changed and keep improving.</p></div></li></ol></section>
+
+<section id="game"><p class="m rv">The long game</p><h2 class="rv">Services are<br>where we start.</h2>
+<ol class="game"><li><b>Services</b></li><li><b>Real businesses</b></li><li><b>Real problems</b></li><li><b>Repeated patterns</b></li><li><b>Repeatable solutions</b></li><li><b>Products</b><small>Only if the evidence says so.</small></li></ol>
+<p class="rv" style="margin-top:3rem">We're starting close to the problem. Every business we work with teaches us something. When the same problem appears often enough, we want to build something better than solving it from scratch every time.</p></section>
+
+<section id="public"><p class="m rv">Building in public</p><h2 class="rv">We're just<br>getting started.</h2>
+<ol class="pub rv"><li><b class="m">01</b><h3>First conversations</h3><span class="st go m">In progress</span></li>
+<li><b class="m">02</b><h3>First problem</h3><span class="st go m">In progress</span></li>
+<li><b class="m">03</b><h3>First build</h3><span class="st m">Up next</span></li>
+<li><b class="m">04</b><h3>First deployment</h3><span class="st m">Not yet</span></li>
+<li><b class="m">05</b><h3>What we learned</h3><span class="st m">We'll write it here</span></li></ol></section>
+
+<section id="who"><p class="m rv">Who we work with</p><h2 class="rv" style="max-width:16ch">We're starting with businesses where manual operations have become expensive.</h2>
+<div class="mq" aria-hidden="true"><div class="mt"><span class="tag">Distributors</span><span class="tag">Wholesalers</span><span class="tag">Manufacturers</span><span class="tag">Logistics</span></div></div>
+<div class="mq" aria-hidden="true"><div class="mt"><span class="tag">Training</span><span class="tag">Retail</span><span class="tag">Service businesses</span><span class="tag">Distributors</span></div></div>
+<p class="sr" style="position:absolute;left:-9999px">Distributors, wholesalers, manufacturers, logistics, training, retail, service businesses.</p>
+<p class="rv">If people are repeatedly copying, checking, entering, forwarding, updating or reconciling information, there's probably something worth looking at.</p></section>
+
+<section class="fin" id="contact">
+<svg viewBox="0 0 600 400" aria-hidden="true"><path class="fl" d="M0 60C120 10 140 160 260 120S330 40 400 200"/><path class="fl" d="M0 330C100 380 180 220 280 290S350 330 400 200"/><path class="fl" d="M0 200C90 120 190 330 290 210S350 190 400 200"/><path d="M400 200H520"/><rect x="520" y="170" width="60" height="60" rx="8"/></svg>
+<p class="m">Contact</p><h2>Show us something that takes too long.</h2>
+<p>We're looking for real business processes worth simplifying.</p>
+<div class="cta"><a class="btn pri mag" href="mailto:hello@example.com?subject=A%20process%20worth%20simplifying">Start a conversation</a><a class="btn mag" href="mailto:hello@example.com">Email Diligence</a></div></section>
+</main>
+<footer><a class="logo" href="#top"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="7" height="7"/><rect x="15" y="15" width="7" height="7"/><path d="M9 5.5h6.5v9.5M5.5 9v6.5H15"/></svg>DILIGENCE</a>
+<span>Practical technology for simpler operations.</span>
+<nav class="m"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="mailto:hello@example.com">Email</a></nav>
+<span class="mut" style="width:100%;font-size:.8rem">Diligence — building from Shahdara, Delhi.</span></footer>
+
+<script>
+(()=>{
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),lp=(a,b,t)=>a+(b-a)*t;
+const NS='http://www.w3.org/2000/svg';
+const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+const sp=s=>{const r=s.getBoundingClientRect();return cl(-r.top/(r.height-innerHeight))};
+const vp=s=>{const r=s.getBoundingClientRect();return cl((innerHeight*.85-r.top)/(r.height*.8))};
+const rt=document.documentElement;
+$('#th').onclick=()=>{const d=rt.dataset.theme?rt.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;rt.dataset.theme=d?'light':'dark'};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(e=>io.observe(e));
+
+/* HERO: messy process -> connected flow */
+const svg=$('#wf'),nm=['REQUEST','ORDER','DATA','DATABASE','BILLING','NOTIFY','CUSTOMER'];
+const ms=[[420,330,-9],[40,60,7],[330,30,-5],[90,300,10],[470,120,6],[210,190,-12],[30,430,5]];
+const cn=i=>[30+i*88,40+i*68];
+const lg=el('g',{},svg),ng=el('g',{},svg);
+const ls=nm.slice(1).map(()=>el('path',{class:'wl',fill:'none'},lg));
+const pts=nm.slice(1).map(()=>el('circle',{r:4,class:'pt'},lg));
+const nd=nm.map(n=>{const g=el('g',{class:'nd'},ng);el('rect',{x:6,y:7,width:100,height:44,rx:7,class:'sh'},g);el('rect',{width:100,height:44,rx:7,class:'f'},g);el('text',{x:50,y:26,'text-anchor':'middle'},g).textContent=n;return g});
+let cur=RM?1:0,on=RM,run=0,vis=true,hvn=-1;const tb=$('#tidy');
+const sync=()=>tb.textContent=on?'↺ Make it messy again':'→ Connect it';sync();
+tb.onclick=()=>{on=!on;sync();go()};
+function draw(tm){
+ const e=cur*cur*(3-2*cur),c=[],act=Math.floor(tm/900)%6;
+ nd.forEach((g,i)=>{const a=ms[i],b=cn(i),bob=RM?0:Math.sin(tm/700+i*1.7)*3*(1-e*.8);
+  const x=lp(a[0],b[0],e),y=lp(a[1],b[1],e)+bob;
+  g.setAttribute('transform',`translate(${x} ${y}) rotate(${a[2]*(1-e)} 50 22)`);c.push([x+50,y+22])});
+ ls.forEach((p,i)=>{const[ax,ay]=c[i],[bx,by]=c[i+1],k=1-e,ox=(i%2?1:-1)*110*k,oy=(i%3-1)*80*k;
+  p.setAttribute('d',`M${ax} ${ay}C${ax+60+ox} ${ay+oy},${bx-60-ox*.8} ${by-oy},${bx} ${by}`);
+  p.classList.toggle('lit',e>.9&&(hvn>=0?(i===hvn||i===hvn-1):i===act));p.style.strokeDasharray=e>.9?'none':'3 7';
+  const pt=p.getPointAtLength(p.getTotalLength()*((tm/2200+i*.17)%1));
+  pts[i].setAttribute('cx',pt.x);pts[i].setAttribute('cy',pt.y);pts[i].style.opacity=e>.9&&!RM?1:0})}
+function loop(tm){const tg=Math.max(on?1:0,cl(scrollY/(innerHeight*.6)));cur=RM?tg:cur+(tg-cur)*.06;draw(tm||0);
+ if(!RM&&vis)requestAnimationFrame(loop);else run=0}
+function go(){if(!run){run=1;requestAnimationFrame(loop)}}
+new IntersectionObserver(e=>{vis=e[0].isIntersecting;if(vis)go()}).observe(svg);
+if(!RM)setTimeout(()=>{on=true;sync();go()},2000);
+addEventListener('pointermove',e=>{if(RM||innerWidth<860)return;const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;
+ svg.style.transform=`perspective(900px) rotateY(${x*8}deg) rotateX(${-y*6}deg)`},{passive:true});
+
+/* PROBLEM: scattered tools -> one flow */
+const st=$('#stage'),pb=$('#problem');
+const mess=[['WhatsApp',10,18,-6],['Notebook',64,12,5],['Excel',36,48,-3],['Invoice, typed again',72,56,6],['Another WhatsApp',12,70,4],['Someone checks everything',50,86,-4]];
+const mk=(t,c)=>{const d=document.createElement('div');d.className='chip '+c;d.textContent=t;st.appendChild(d);return d};
+const mc=mess.map(m=>mk(m[0],'x')),cc=['Order','Database','Invoice','Customer','Report'].map(t=>mk(t,'ok'));
+const sl=document.createElement('div');sl.className='sline';st.appendChild(sl);
+function prob(){const p=sp(pb),n=innerWidth<700,m=cl((p-.3)/.3),k=cl((p-.55)/.35);
+ mess.forEach((a,i)=>{const d=mc[i],x=n?cl(a[1],26,74):a[1];d.style.left=lp(x,50,m*.6)+'%';d.style.top=lp(a[2],60,m*.6)+'%';
+  d.style.opacity=1-m;d.style.transform=`translate(-50%,-50%) rotate(${a[3]*(1-m)}deg) scale(${1-m*.3})`});
+ cc.forEach((d,i)=>{const v=cl(k*5.5-i),q=n?[50,12+i*19]:[12+i*19,62];d.style.left=q[0]+'%';d.style.top=q[1]+'%';
+  d.style.opacity=v;d.style.transform=`translate(-50%,-50%) translateY(${(1-v)*16}px)`});
+ sl.style.cssText=n?`left:50%;top:12%;width:2px;height:${k*76}%`:`left:12%;top:62%;height:2px;width:${k*76}%`;
+ $('.r2').style.opacity=cl((p-.12)/.15);$('.note').style.opacity=cl((p-.8)/.15)}
+
+/* SERVICES tilt */
+$$('.mod').forEach(m=>{m.onpointermove=e=>{if(RM)return;const r=m.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+ m.style.transform=`perspective(700px) rotateY(${x*6}deg) rotateX(${-y*6}deg)`};m.onpointerleave=()=>m.style.transform=''});
+
+/* BEFORE / AFTER */
+const S=[['Customer sends order','Arrives as a WhatsApp message','Captured as a structured order','WhatsApp'],
+['Order gets recorded','Copied into a notebook, then a sheet','Written once, to one database','Notebook'],
+['Stock checked','Someone opens Excel and looks','Checked automatically against stock','Excel'],
+['Invoice created','Typed again by hand','Generated from the order','Billing app'],
+['Customer confirmed','Another WhatsApp, sent manually','Confirmation goes out on its own','WhatsApp'],
+['Record updated','Updated later, if remembered','Updated by the same flow','Sheet']];
+const fl=$('#flow');let mode='before';
+function rf(){fl.className='flow '+mode;
+ fl.innerHTML=S.map((s,i)=>`<li><b class="m">0${i+1}</b><div><h3>${s[0]}</h3><p>${s[mode==='before'?1:2]}</p></div><span class="tg2 m">${mode==='before'?s[3]+(i===1||i===3?' · retyped':''):'connected'}</span></li>`).join('');
+ $$('#tg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===mode))}
+$$('#tg button').forEach(b=>b.onclick=()=>{mode=b.dataset.m;rf()});rf();
+
+/* HOW: counters + line gets straighter */
+const wk=$('#work'),wp=$('#wp');
+const io2=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const n=+e.target.dataset.n;let s=null;
+ const f=t=>{s=s??t;const q=cl((t-s)/700);e.target.textContent='0'+Math.round(q*n);if(q<1)requestAnimationFrame(f)};
+ RM?e.target.textContent='0'+n:requestAnimationFrame(f);io2.unobserve(e.target)}),{threshold:.6});
+$$('.num').forEach(n=>io2.observe(n));
+function wl(){const a=1-cl(vp(wk)*1.3);let d='';for(let i=0;i<=24;i++){const x=20+(Math.sin(i*1.9)*11+Math.cos(i*3.3)*7)*a;d+=(i?'L':'M')+x.toFixed(1)+' '+(i*4.17).toFixed(1)+' '}wp.setAttribute('d',d)}
+
+/* LONG GAME */
+const gm=$('#game'),gl=$$('.game li');
+function game(){const p=vp(gm);gl.forEach((l,i)=>l.classList.toggle('on',p*7>i+.8))}
+
+/* magnetic buttons + marquee */
+$$('.mag').forEach(b=>{b.onpointermove=e=>{if(RM)return;const r=b.getBoundingClientRect();b.style.translate=`${(e.clientX-r.left-r.width/2)*.18}px ${(e.clientY-r.top-r.height/2)*.25}px`};b.onpointerleave=()=>b.style.translate=''});
+if(!RM)$$('.mt').forEach(t=>t.innerHTML+=t.innerHTML);
+
+/* pass 2: node hover, floor, projects, spine, parallax, cursor */
+nd.forEach((g,i)=>{g.onpointerenter=()=>{hvn=i;g.classList.add('h');go()};g.onpointerleave=()=>{hvn=-1;g.classList.remove('h')}});
+const fg=el('g',{class:'fg'});svg.insertBefore(fg,svg.firstChild);
+for(let i=0;i<8;i++)el('path',{d:`M-60 ${455+i*i*1.6+i*4} H740`},fg);
+for(let x=-100;x<=780;x+=90)el('path',{d:`M340 380L${x} 530`},fg);
+addEventListener('pointermove',e=>{if(RM||innerWidth<860)return;fg.style.transform=`translate(${-(e.clientX/innerWidth-.5)*26}px,${-(e.clientY/innerHeight-.5)*8}px)`},{passive:true});
+/* EDIT THIS ARRAY: only real projects belong here */
+const PROJECTS=[1,2].map(n=>({n:'0'+n,name:'[Project name]',desc:'[One-line description. Replace with a real project.]',problem:'[The workflow problem it solves.]',system:'[What was built and which systems it connects.]',role:'[Diligence\'s role.]',stack:'[Technologies / capabilities]',status:'PLACEHOLDER: not a real project'}));
+$('#pj').innerHTML=PROJECTS.map((p,i)=>`<article class="pj" tabindex="0" style="top:${5+i*1.4}rem"><div><span class="m">Project ${p.n}</span><h3>${p.name}</h3><p class="mut">${p.desc}</p><dl><div><dt class="m">The problem</dt><dd>${p.problem}</dd></div><div><dt class="m">The system</dt><dd>${p.system}</dd></div><div><dt class="m">Current status</dt><dd>${p.status}</dd></div></dl><div class="more m"><p>Our role: ${p.role}</p><p>Built with: ${p.stack}</p></div></div><div class="vis"><svg viewBox="0 0 300 200" aria-hidden="true"><g class="l1"><rect x="20" y="30" width="70" height="36" rx="6"/><rect x="115" y="82" width="70" height="36" rx="6"/><rect x="210" y="134" width="70" height="36" rx="6"/></g><g class="l2"><path class="fl" d="M90 48C110 48 100 100 115 100M185 100C205 100 195 152 210 152"/></g><text x="150" y="192" text-anchor="middle">PLACEHOLDER VISUAL</text></svg></div></article>`).join('');
+$$('.pj').forEach(c=>{c.onpointermove=e=>{if(RM||innerWidth<860)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.setProperty('--mx',x);c.style.setProperty('--my',y);c.style.transform=`perspective(900px) rotateY(${x*3}deg) rotateX(${-y*3}deg)`};c.onpointerleave=()=>{c.style.transform='';c.style.setProperty('--mx',0);c.style.setProperty('--my',0)}});
+const spn=$('#sp'),PX=[['.hv',.08],['.fin svg',-.1],['.num',-.06]].map(([q,k])=>[$$(q),k]);
+function ext(){spn.style.setProperty('--sp',(scrollY/Math.max(1,rt.scrollHeight-innerHeight)).toFixed(3));
+ if(RM||innerWidth<860)return;PX.forEach(([a,k])=>a.forEach(e=>{const r=e.getBoundingClientRect();e.style.translate=`0 ${((r.top+r.height/2-innerHeight/2)*k).toFixed(1)}px`}))}
+if(matchMedia('(pointer:fine)').matches&&!RM){const c=document.createElement('div');c.className='cur';document.body.appendChild(c);
+ addEventListener('pointermove',e=>{c.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;c.classList.add('on');c.classList.toggle('big',!!e.target.closest('a,button,.pj,.tag,.mod,.nd'))},{passive:true})}
+
+const upd=()=>{prob();wl();game();go();ext()};
+addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();
+</script></body></html>
